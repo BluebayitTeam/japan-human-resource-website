@@ -1,0 +1,81 @@
+.section-title {
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.stat-box {
+  padding: 30px 20px;
+  margin: 15px 0;
+  color: #000000;
+  text-align: center;
+}
+
+/* .stat-box:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
+} */
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  line-height: 1;
+  color: #000000;
+}
+
+.stat-symbol {
+  font-size: 1.5rem;
+  /* vertical-align: super; */
+}
+
+.stat-label {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0.9;
+  color: #000000;
+}
+
+/* .divider {
+  height: 3px;
+  width: 50px;
+  background: #fff;
+  margin: 15px auto;
+  opacity: 0.7;
+} */
+
+.box-1 {
+  background: #f9f9f9;
+}
+
+.box-2 {
+  background: #704cff;
+}
+
+.box-3 {
+  background: #f4444f;
+}
+
+.box-4 {
+  background: #2a8afa;
+}
+
+@media (max-width: 768px) {
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .stat-box {
+    margin: 10px 0;
+  }
+}
+
+#google_translate_element,
+.goog-te-banner-frame,
+.goog-te-gadget {
+  display: none !important;
+}
+
+/* primary color #104d1d */
+/* secondary color #34653E */
