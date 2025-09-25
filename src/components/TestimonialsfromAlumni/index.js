@@ -100,7 +100,6 @@ const TestimonialsfromAlumni = (props) => {
 
   //for content items
   const newContents = items(contents);
-  console.log("glfjlfjg", newContents);
 
   return (
     <section

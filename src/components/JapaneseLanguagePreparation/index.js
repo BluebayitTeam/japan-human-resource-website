@@ -19,7 +19,6 @@ function items(obj) {
 
 const JapaneseLanguagePreparation = (props) => {
   const { id } = useParams();
-  //console.log("aboutID", props.id);
   const [contents, setContents] = useState("");
 
   useEffect(() => {

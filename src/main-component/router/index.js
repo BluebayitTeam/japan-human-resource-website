@@ -19,6 +19,15 @@ import SuccessStoriesPage from "../SuccessStoriesPage";
 import EventPage2 from "../EventPage2";
 import EventSinglePage from "../EventSinglePage";
 import EthicsSinglePage from "../EthicsSinglePage";
+import VisionPage from "../VisionPage";
+import TeamPage from "../TeamPage";
+import SkilPage from "../SkilPage";
+import TestimonialsfromAlumniPage from "../TestimonialsfromAlumniPage";
+import SuccessMetrics from "../../components/SuccessMetricsPage";
+import SuccessMetricsPage from "../../components/SuccessMetricsPage";
+import MonitoringPage from "../MonitoringPage";
+import CollaborationModelPage from "../CollaborationModelPage";
+import MouTemplatesPage from "../MouTemplatesModelPage";
 
 const AllRoute = ({ logo }) => {
   const [homeId, setHomeId] = useState();
@@ -85,16 +94,30 @@ const AllRoute = ({ logo }) => {
           <Route path="/home/:id" component={Homepage} />
           {/* About Us page */}
           <Route path="/about/:id" component={AboutPage} />
+          <Route path="/our vision/:id" component={VisionPage} />
+          <Route path="/our team/:id" component={TeamPage} />
           {/* Programs & Training page */}
           <Route
             path="/programs & training/:id"
             component={TrainingInstitutePage}
+          />
+          <Route path="/Success Metrics/:id" component={SuccessMetricsPage} />
+          <Route path="/Japanese  Preparation/:id" component={SkilPage} />
+          <Route
+            path="/Testimonials from Alumni/:id"
+            component={TestimonialsfromAlumniPage}
           />
           {/* For Supervising Organizations (Japan) page */}
           <Route
             path="/supervising organizations/:id"
             component={PerformancePage}
           />
+          <Route
+            path="/Collaboration Models/:id"
+            component={CollaborationModelPage}
+          />
+          <Route path="/mou templates/:id" component={MouTemplatesPage} />
+          <Route path="/Monitoring System/:id" component={MonitoringPage} />
           {/* Success Stories page */}
           <Route path="/success stories/:id" component={SuccessStoriesPage} />
           {/*  Compliance & Ethics page */}

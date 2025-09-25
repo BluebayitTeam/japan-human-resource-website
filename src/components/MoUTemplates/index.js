@@ -46,7 +46,7 @@ const MoUTemplates = (props) => {
               className="wpo-about-text"
               style={{
                 padding: "50px 0 50px 0",
-                marginBottom: "50px",
+
                 background: "#e9fafa",
               }}
               key={index}

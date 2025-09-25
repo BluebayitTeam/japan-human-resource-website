@@ -223,47 +223,6 @@ const TrainingInstitute = (props) => {
           )}
         </div>
       </div>
-
-      {/* Our companies */}
-      {/* <OurCompanies id={homeId} tClass={"wpo-testimonial-area-s3"} /> */}
-      <JapaneseLanguagePreparation />
-      {/* Portfolio showcase */}
-      <div className="container" style={{ marginTop: "50px" }}>
-        <div className="row">
-          <h2 className="text-center">Success Metrics</h2>
-          <div className="col-md-4 col-6">
-            <div className="stat-box box-1">
-              <h4 className="stat-number">
-                500<span className="stat-symbol">+</span>
-              </h4>
-              <div className="divider"></div>
-              <p className="stat-label">Student Placed</p>
-            </div>
-          </div>
-
-          <div className="col-md-4 col-6">
-            <div className="stat-box box-1">
-              <h3 className="stat-number">
-                85 <span className="stat-symbol">%</span>
-              </h3>
-              <div className="divider"></div>
-              <p className="stat-label">JLPT Pass Rate</p>
-            </div>
-          </div>
-
-          <div className="col-md-4 col-6">
-            <div className="stat-box box-1">
-              <h3 className="stat-number">
-                100<span className="stat-symbol">%</span>
-              </h3>
-              <div className="divider"></div>
-              <p className="stat-label">programme CompleSon Rate</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <TestimonialsfromAlumni />
     </section>
   );
 };

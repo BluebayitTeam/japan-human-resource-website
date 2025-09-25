@@ -92,12 +92,13 @@ export default class Header2 extends Component {
                       <button className="menu-close">
                         <i className="ti-close"></i>
                       </button>
+
                       {this.props.menu.map((n) => (
-                        <ul className="nav navbar-nav mb-1 mb-lg-0">
+                        <ul className="nav navbar-nav mb-1 mb-lg-0" key={n.id}>
                           <li className="menu-item-has-children text-nowrap">
                             {n.name === "Home" ? (
                               <Link onClick={ClickHandler} to={`/`}>
-                                {n?.name === "Home" ? n.name : ""}
+                                {n?.name}
                               </Link>
                             ) : n.children.length === 0 ? (
                               <Link
@@ -107,7 +108,12 @@ export default class Header2 extends Component {
                                 {n?.name}
                               </Link>
                             ) : (
-                              <Link>{n?.name}</Link>
+                              <Link
+                                onClick={ClickHandler}
+                                to={`/${n.name.toLowerCase()}/${n.id}`}
+                              >
+                                {n?.name}
+                              </Link>
                             )}
 
                             <ul
@@ -117,13 +123,15 @@ export default class Header2 extends Component {
                                   n.children.length === 0 ? "none" : "block",
                               }}
                             >
-                              {n.children.map((n) => (
-                                <li>
+                              {n.children.map((child) => (
+                                <li key={child.id}>
                                   <Link
                                     onClick={ClickHandler}
-                                    to={`/${n.name.toLowerCase()}/${n.id}`}
+                                    to={`/${child.name.toLowerCase()}/${
+                                      child.id
+                                    }`}
                                   >
-                                    {n.name}
+                                    {child.name}
                                   </Link>
                                 </li>
                               ))}
@@ -131,23 +139,25 @@ export default class Header2 extends Component {
                           </li>
                         </ul>
                       ))}
+
                       <LanguageSwitcher />
                     </div>
                   </div>
+
                   {/* <div className="col-lg-2 col-md-2 col-2">
-                  <div className="header-right">
-                    <div
-                      style={{
-                        display: "flex",
-                        right: "90px",
-                        top: "7px",
-                      }}
-                    >
-                      <p style={{ color: "whitesmoke" }}>Lg </p>
-                      <div id="google_translate_element"></div>
+                    <div className="header-right">
+                      <div
+                        style={{
+                          display: "flex",
+                          right: "90px",
+                          top: "7px",
+                        }}
+                      >
+                        <p style={{ color: "whitesmoke" }}>Lg </p>
+                        <div id="google_translate_element"></div>
+                      </div>
                     </div>
-                  </div>
-                </div> */}
+                  </div> */}
                 </div>
               </div>
             </nav>

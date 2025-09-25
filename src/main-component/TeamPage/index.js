@@ -7,7 +7,7 @@ import AboutS2 from "../../components/AboutS2";
 import Vision from "../../components/Vision";
 import OurEmployees from "../../components/OurEmployees";
 
-const AboutPage = () => {
+const TeamPage = () => {
   const [homeId, setHomeId] = useState();
 
   useEffect(() => {
@@ -21,13 +21,12 @@ const AboutPage = () => {
 
   return (
     <Fragment>
-      <PageTitle pageTitle={"About Us"} pagesub={"About"} />
-      <AboutS2 id={homeId} />
-      {/* <Vision id={homeId} /> */}
-      {/* <OurEmployees /> */}
+      <PageTitle pageTitle={"Meet the Team"} pagesub={"About"} />
+
+      <OurEmployees />
       <Footer />
       <Scrollbar />
     </Fragment>
   );
 };
-export default AboutPage;
+export default TeamPage;
