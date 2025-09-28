@@ -2,7 +2,7 @@
 4. wpo-footer
 --------------------------------------------------------------*/
 .wpo-site-footer {
-  background: #34653E;
+  background: #fec76f;
   position: relative;
   font-size: 15px;
   overflow: hidden;
@@ -121,7 +121,7 @@
         }
       }
 
-      li+li {
+      li + li {
         margin-left: 25px;
       }
     }
@@ -167,7 +167,7 @@
         }
       }
 
-      li+li {
+      li + li {
         padding-top: 15px;
       }
     }

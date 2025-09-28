@@ -33,7 +33,7 @@ export default class Header2 extends Component {
             justifyContent: "center",
             gap: "20px",
             padding: "5px",
-            backgroundColor: "#34653E",
+            backgroundColor: "#8A5B7C",
           }}
         >
           <p
@@ -55,7 +55,7 @@ export default class Header2 extends Component {
         <header id="header" className={this.props.topbarNone}>
           <div
             className={`wpo-site-header  ${this.props.hclass}`}
-            style={{ backgroundColor: "#104d1d" }}
+            style={{ backgroundColor: "#653455ff" }}
           >
             <nav className="navigation navbar navbar-expand-lg navbar-light">
               <div className="container-fluid">
