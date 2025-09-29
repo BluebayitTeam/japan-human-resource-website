@@ -54,7 +54,7 @@ export default class Header2 extends Component {
         <header id="header" className={this.props.topbarNone}>
           <div
             className={`wpo-site-header  ${this.props.hclass}`}
-            style={{ backgroundColor: "#128e51" }}
+            style={{ backgroundColor: "#192847" }}
           >
             <nav className="navigation navbar navbar-expand-lg navbar-light">
               <div className="container-fluid">
