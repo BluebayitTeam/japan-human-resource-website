@@ -27,7 +27,7 @@ function items(obj) {
   return content;
 }
 
-const LicensingInfo = (props) => {
+const MonitoringsInfo = (props) => {
   const [contentsImage, setContentsImage] = useState([]);
   const { id } = useParams();
   const [contents, setContents] = useState("");
@@ -55,12 +55,6 @@ const LicensingInfo = (props) => {
       .catch(() => {});
   }, [id, props.id]);
 
-  const images = Object.entries(contentsImage)
-    .map(([key, value]) =>
-      key === "Licensing Info" ? value.map((n) => `${BASE_URL}/media/${n}`) : []
-    )
-    .flat();
-
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
 
@@ -86,7 +80,7 @@ const LicensingInfo = (props) => {
             {/* Skill Training Program Center */}
             {newContents.map((service, index) =>
               Object.entries(service).map(([key, value]) =>
-                key === "Licensing Information" ? (
+                key === "Monitoring & Reporting Mechanisms" ? (
                   <div className="text-center mb-2" key={index}>
                     <Interweave
                       allowAttributes
@@ -102,7 +96,7 @@ const LicensingInfo = (props) => {
           <div className="row justify-content-start m-2">
             {newContents.map((service, index) =>
               Object.entries(service).map(([key, value]) =>
-                ["Government License", "Certifications"].includes(key) ? (
+                ["Regular Reports", "Audits & Reviews"].includes(key) ? (
                   <div className="col-sm-6 mb-4 " key={index + key}>
                     <div
                       style={{
@@ -124,15 +118,13 @@ const LicensingInfo = (props) => {
                           "0 2px 6px rgba(0,0,0,0.1)")
                       }
                     >
-                      <Link to={`/ethics/${key}`}>
-                        <Interweave
-                          allowAttributes
-                          allowElements
-                          disableLineBreaks={true}
-                          content={value}
-                          className="text-justify"
-                        />
-                      </Link>
+                      <Interweave
+                        allowAttributes
+                        allowElements
+                        disableLineBreaks={true}
+                        content={value}
+                        className="text-justify"
+                      />
                     </div>
                   </div>
                 ) : null
@@ -145,4 +137,4 @@ const LicensingInfo = (props) => {
   );
 };
 
-export default LicensingInfo;
+export default MonitoringsInfo;

@@ -32,6 +32,8 @@ import TrainJapanPage from "../TrainJapanPage";
 import MessagesfromPage from "../MessagesfromPage";
 import GalleryPage from "../GalleryPage";
 import EthicalPage from "../EthicalPage";
+import MonitoringsPage from "../MonitoringsPage";
+import HelpLinePage from "../HelpLinePage";
 
 const AllRoute = ({ logo }) => {
   const [homeId, setHomeId] = useState();
@@ -125,6 +127,11 @@ const AllRoute = ({ logo }) => {
           />
           <Route path="/mou templates/:id" component={MouTemplatesPage} />
           <Route path="/Monitoring System/:id" component={MonitoringPage} />
+          <Route path="/Helpline for Trainees/:id" component={HelpLinePage} />
+          <Route
+            path="/Monitoring & Reporting/:id"
+            component={MonitoringsPage}
+          />
           {/* Success Stories page */}
           <Route path="/success stories/:id" component={SuccessStoriesPage} />
           {/*  Compliance & Ethics page */}
