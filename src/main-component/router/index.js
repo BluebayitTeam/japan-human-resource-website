@@ -28,6 +28,10 @@ import SuccessMetricsPage from "../../components/SuccessMetricsPage";
 import MonitoringPage from "../MonitoringPage";
 import CollaborationModelPage from "../CollaborationModelPage";
 import MouTemplatesPage from "../MouTemplatesModelPage";
+import TrainJapanPage from "../TrainJapanPage";
+import MessagesfromPage from "../MessagesfromPage";
+import GalleryPage from "../GalleryPage";
+import EthicalPage from "../EthicalPage";
 
 const AllRoute = ({ logo }) => {
   const [homeId, setHomeId] = useState();
@@ -102,7 +106,10 @@ const AllRoute = ({ logo }) => {
             component={TrainingInstitutePage}
           />
           <Route path="/Success Metrics/:id" component={SuccessMetricsPage} />
+          <Route path="/Trainees in Japan/:id" component={TrainJapanPage} />
+          <Route path="/Supervisor Message/:id" component={MessagesfromPage} />
           <Route path="/Japanese  Preparation/:id" component={SkilPage} />
+          <Route path="/Gallery/:id" component={GalleryPage} />
           <Route
             path="/Testimonials from Alumni/:id"
             component={TestimonialsfromAlumniPage}
@@ -122,6 +129,7 @@ const AllRoute = ({ logo }) => {
           <Route path="/success stories/:id" component={SuccessStoriesPage} />
           {/*  Compliance & Ethics page */}
           <Route path="/compliance & ethics/:id" component={MissionPage} />
+          <Route path="/Ethical Recruitment/:id" component={EthicalPage} />
           {/* News & Events page */}
           <Route path="/news & events/:id" component={EventPage} />
           {/*  Contact Us page */}

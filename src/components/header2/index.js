@@ -33,23 +33,22 @@ export default class Header2 extends Component {
             justifyContent: "center",
             gap: "20px",
             padding: "5px",
-            backgroundColor: "#8A5B7C",
+            backgroundColor: "#ffff",
           }}
         >
-          <p
-            className="text-white m-0"
-            style={{ display: "flex", alignItems: "center", gap: "10px" }}
-          >
-            <i className="fi flaticon-mail"></i> {"  "}{" "}
-            <span>{this.props?.siteSetting?.email}</span>
-          </p>
-          <p
-            className="text-white m-0"
-            style={{ display: "flex", alignItems: "center", gap: "10px" }}
-          >
-            <i className="fi flaticon-phone-call"></i> {"  "}{" "}
-            <span>{this.props?.siteSetting.phone}</span>
-          </p>
+          <div className="navbar-header">
+            <Link onClick={ClickHandler} className="navbar-brand" to={`/`}>
+              <img
+                style={{
+                  width: "450px",
+                  height: "auto",
+                  marginLeft: "50px",
+                }}
+                src={`${BASE_URL}${this.props.Logo}`}
+                alt=""
+              />
+            </Link>
+          </div>
         </div>
 
         <header id="header" className={this.props.topbarNone}>
@@ -65,26 +64,8 @@ export default class Header2 extends Component {
                       <MobileMenu menu={this.props.menu} />
                     </div>
                   </div>
-                  <div className="col-lg-3 col-md-6 col-6">
-                    <div className="navbar-header">
-                      <Link
-                        onClick={ClickHandler}
-                        className="navbar-brand"
-                        to={`/`}
-                      >
-                        <img
-                          style={{
-                            width: "50px",
-                            height: "50px",
-                            marginLeft: "50px",
-                          }}
-                          src={`${BASE_URL}${this.props.Logo}`}
-                          alt=""
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="col-lg-7 col-md-1 col-1">
+                  <div className="col-lg-2 col-md-6 col-6"></div>
+                  <div className="col-lg-8 col-md-1 col-1">
                     <div
                       id="navbar"
                       className="collapse navbar-collapse navigation-holder"

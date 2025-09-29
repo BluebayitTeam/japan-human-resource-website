@@ -2,18 +2,18 @@ import React, { Fragment } from "react";
 import PageTitle from "../../components/pagetitle";
 import Footer from "../../components/footer";
 import Scrollbar from "../../components/scrollbar";
-import SuccessStories from "../../components/SuccessStories";
 import Gallery from "../../components/Gallery";
+import TrainJapan from "../../components/TrainJapan";
 
-const SuccessStoriesPage = () => {
+const TrainJapanPage = () => {
   return (
     <Fragment>
-      <PageTitle pageTitle={"Success Stories"} />
-      <SuccessStories />
+      <PageTitle pageTitle={"Trainees in Japan"} />
+      <TrainJapan />
 
       <Footer />
       <Scrollbar />
     </Fragment>
   );
 };
-export default SuccessStoriesPage;
+export default TrainJapanPage;
