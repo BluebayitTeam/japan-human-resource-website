@@ -53,7 +53,7 @@ const EthicsSinglePage = () => {
       .then((response) => response.json())
       .then((data) => {
         data.menus.find((e) =>
-          e.name === "Compliance & Ethics" ? setEventPageId(e.id) : null
+          e.name === "Licensing Information" ? setEventPageId(e.id) : null
         );
       })
       .catch(() => {});

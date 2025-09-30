@@ -5,6 +5,7 @@ import {
   GET_SITESETTINGS,
   GET_SLIDERSETTINGS,
 } from "../../constant/constants";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [contents, setContents] = useState([]);
@@ -151,18 +152,26 @@ const Hero = () => {
         className="d-flex justify-content-center flex-wrap"
         style={{ gap: "20px", marginTop: "40px", marginBottom: "40px" }}
       >
-        <Card
-          style={{
-            width: "300px",
-            textAlign: "center",
-            padding: "20px",
-            borderRadius: "20px",
-            boxShadow: "0px 6px 20px rgba(0,0,0,0.2)",
-            marginTop: "-15px",
-          }}
+        <a
+          href="https://human-resource-bd.com/wp/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none" }}
         >
-          <h3 style={{ marginTop: "15px" }}>Our Main Website</h3>
-        </Card>
+          <Card
+            style={{
+              width: "300px",
+              textAlign: "center",
+              padding: "20px",
+              borderRadius: "20px",
+              boxShadow: "0px 6px 20px rgba(0,0,0,0.2)",
+              marginTop: "-15px",
+            }}
+          >
+            <h3 style={{ marginTop: "15px" }}>Our Main Website</h3>
+          </Card>
+        </a>
+
         <Card
           style={{
             width: "300px",

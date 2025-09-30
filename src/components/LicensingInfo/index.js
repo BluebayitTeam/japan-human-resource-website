@@ -57,7 +57,9 @@ const LicensingInfo = (props) => {
 
   const images = Object.entries(contentsImage)
     .map(([key, value]) =>
-      key === "Licensing Info" ? value.map((n) => `${BASE_URL}/media/${n}`) : []
+      key === "Licensing Information"
+        ? value.map((n) => `${BASE_URL}/media/${n}`)
+        : []
     )
     .flat();
 

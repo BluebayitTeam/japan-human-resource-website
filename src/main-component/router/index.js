@@ -134,8 +134,8 @@ const AllRoute = ({ logo }) => {
           />
           {/* Success Stories page */}
           <Route path="/success stories/:id" component={SuccessStoriesPage} />
-          {/*  Compliance & Ethics page */}
-          <Route path="/compliance & ethics/:id" component={MissionPage} />
+          {/*  Licensing information page */}
+          <Route path="/licensing information/:id" component={MissionPage} />
           <Route path="/Ethical Recruitment/:id" component={EthicalPage} />
           {/* News & Events page */}
           <Route path="/news & events/:id" component={EventPage} />

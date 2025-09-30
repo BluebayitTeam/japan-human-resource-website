@@ -30,7 +30,7 @@ const Mission = (props) => {
 
         // //console.log("allmenucontent", data);
       })
-      .catch(() => { });
+      .catch(() => {});
   }, [id, props.id]);
   // //console.log("contents", contents);
 
@@ -45,7 +45,7 @@ const Mission = (props) => {
             <div className="wpo-about-text">
               {newContents.map((service, index) =>
                 Object.entries(service).map(([key, value]) =>
-                  key === "Compliance & Ethics" ? (
+                  key === "Licensing information" ? (
                     <div className="" key={index}>
                       <Interweave
                         allowAttributes
