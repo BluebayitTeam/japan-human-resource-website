@@ -3,7 +3,6 @@ import PageTitle from "../../components/pagetitle";
 import Footer from "../../components/footer";
 import Scrollbar from "../../components/scrollbar";
 import SuccessStories from "../../components/SuccessStories";
-import Gallery from "../../components/Gallery";
 
 const SuccessStoriesPage = () => {
   return (
