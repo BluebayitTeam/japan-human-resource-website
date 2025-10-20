@@ -1,7 +1,7 @@
 const isProduction = process.env.NODE_ENV === "production";
 
 export const BASE_URL = isProduction
-  ? "https://apitraining.westernbusinessallianceltd.com"
+  ? "https://japanapi.welcome-dmc.com"
   : "http://192.168.68.131:8010";
 // "https://apitraining.westernbusinessallianceltd.com";
 export const LOGIN_URL = `${BASE_URL}/user/api/v1/user/login/`;
