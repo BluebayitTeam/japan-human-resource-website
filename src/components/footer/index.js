@@ -195,21 +195,6 @@ const Footer = (props) => {
                       {siteSetting.address}
                     </li>
                   </ul>
-                  <p style={{ fontWeight: "bold" }}>
-                    Our Training Center Located
-                  </p>
-                  <ul>
-                    <li>
-                      <i className="fi flaticon-location"></i>
-                      Pathargata, Sirajdikhan, Munshiganj
-                    </li>
-                    <li>
-                      <i className="fi flaticon-mail"></i> westerntti@gmail.com
-                    </li>
-                    <li>
-                      <i className="fi flaticon-phone-call"></i> +8801746088196
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>

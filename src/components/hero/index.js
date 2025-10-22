@@ -171,19 +171,26 @@ const Hero = () => {
             <h3 style={{ marginTop: "15px" }}>Our Main Website</h3>
           </Card>
         </a>
-
-        <Card
-          style={{
-            width: "300px",
-            textAlign: "center",
-            padding: "20px",
-            borderRadius: "20px",
-            boxShadow: "0px 6px 20px rgba(0,0,0,0.2)",
-            marginTop: "-15px",
-          }}
+        <a
+          href="https://welcome-dmc.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none" }}
         >
-          <h3 style={{ marginTop: "15px" }}>Our Medical</h3>
-        </Card>
+          <Card
+            style={{
+              width: "300px",
+              textAlign: "center",
+              padding: "20px",
+              borderRadius: "20px",
+              boxShadow: "0px 6px 20px rgba(0,0,0,0.2)",
+              marginTop: "-15px",
+            }}
+          >
+            <h3 style={{ marginTop: "15px" }}>Our Medical</h3>
+          </Card>
+        </a>
+
         <Card
           style={{
             width: "300px",
