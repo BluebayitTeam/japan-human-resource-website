@@ -77,7 +77,8 @@ const EventSinglePage = () => {
   }, [eventPageId]);
 
   const newContents = items(contents);
-  const imageHeight = windowWidth < 600 ? '400px' : '500px';
+  // const imageHeight = windowWidth < 600 ? '400px' : '500px';
+  const imageHeight = 'auto'
 
 
 
@@ -94,7 +95,7 @@ const EventSinglePage = () => {
               {Object.entries(contentsImage ? contentsImage : {}).map(
                 ([key, value]) =>
                   key === title ? (
-                    <div className='wpo-about-img' key={`${title}-image`}>
+                    <div className='wpo-about-img p-3' key={`${title}-image`}>
                       <img
                         style={{ height: imageHeight, width: '100%', objectFit: 'cover' }}
                         src={`${BASE_URL}/media/${value}`}
