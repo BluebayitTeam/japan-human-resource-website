@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom'
-import Events from '../../api/event'
+import React from 'react';
+
 import { Interweave } from 'interweave';
-import React, { useEffect, useState } from 'react';
-import { useParams } from "react-router-dom";
+import { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import {
     BASE_URL,
     GET_CONTENTS_BY_MENU_ID,
@@ -75,12 +75,25 @@ const EventSection = (props) => {
     }
 
     const sections = [
-        "Help Children Raise Out Of Proverty",
-        "Provideing Education Is The Valuable Gift",
+        "Fiji visa",
+        "Japan circular",
+        "Japan language course circular",
+        "Japan language course circular 2",
+        "Japan language course circular 3",
+        "Japan main poster",
+        "Malaysia caling visa",
+        "Malaysia caling visa 2",
+        "Malaysia worker visa",
+        "Soudi arab visa",
+        "Soudi arab worker visa",
+        "SSW agriculture japan circular",
+        "SSW japan circular",
+        "Titp & Agriculture visa japan"
+
     ];
 
     return (
-        <div >
+        <>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-6">
@@ -109,7 +122,7 @@ const EventSection = (props) => {
                     <div className="row">
                         {sections.map((title) => (
                             <div className="col col-lg-4 col-md-6 col-12" key={title}>
-                                <div className="wpo-event-single">
+                                <div className="wpo-event-single py-3 mb-3">
                                     <div className="wpo-event-item">
                                         {Object.entries(contentsImage ? contentsImage : {}).map(
                                             ([key, value]) =>
@@ -126,7 +139,7 @@ const EventSection = (props) => {
                                                     ' '
                                                 )
                                         )}
-                                        <div className="wpo-event-content">
+                                        <div className="wpo-event-content mt-3">
                                             <div className="wpo-event-text-top">
                                                 {newContents.map((service, index) =>
                                                     Object.entries(service).map(([key, value]) =>
@@ -137,7 +150,7 @@ const EventSection = (props) => {
                                                                         allowAttributes
                                                                         allowElements
                                                                         disableLineBreaks={true}
-                                                                        content={value?.slice(0, 250) + '...'}
+                                                                        content={value?.slice(0, 250) + (value?.length > 250 ? '...' : '')}
                                                                     />
                                                                 </Link>
                                                             </div>
@@ -154,7 +167,7 @@ const EventSection = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
